@@ -1,0 +1,24 @@
+#search-term {
+	text-align: center;
+	margin-top: 15%;
+}
+#query {
+	background-color: #db056a;
+	size: 1.5rem;
+	font-size: 3vh;
+	width: 20rem;
+	height: 2rem;
+	margin: auto;
+	border-radius: 5px;
+}
+
+#submit-button {
+	background-color: #02bda3;
+	font-size: 3.5vh;
+	color: #eae4df;
+	border-radius: 5px;
+}
+
+#search-results {
+	display: inline-block;
+}
