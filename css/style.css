@@ -19,6 +19,8 @@
 	border-radius: 5px;
 }
 
-#search-results {
+.search-results {
 	display: inline-block;
+	float: left;
+	list-style-type: none;
 }
