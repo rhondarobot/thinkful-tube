@@ -3,9 +3,9 @@
 	margin-top: 15%;
 }
 #query {
-	background-color: #db056a;
+	background-color: beige;
 	size: 1.5rem;
-	font-size: 3vh;
+	font-size: 3vw 3vh;
 	width: 20rem;
 	height: 2rem;
 	margin: auto;
@@ -14,7 +14,7 @@
 
 #submit-button {
 	background-color: #02bda3;
-	font-size: 3.5vh;
+	font-size: 3vw 3vh;
 	color: #eae4df;
 	border-radius: 5px;
 }
