@@ -23,4 +23,9 @@
 	display: inline-block;
 	float: left;
 	list-style-type: none;
+	background: beige;
+	border-top: 3px solid #F5F5DC;
+	width: 100%;
+	text-align: center;
 }
+

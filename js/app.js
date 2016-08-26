@@ -11,7 +11,8 @@ function getRequest(searchTerm){
     part: 'snippet',
     maxResults: 9, 
     key: 'AIzaSyCo89pj5c21WfnyiC_LBSb9prU4oUu_o-w',
-    q: searchTerm
+    q: searchTerm,
+    type: 'video'
   };
   url = 'https://www.googleapis.com/youtube/v3/search';
 
@@ -26,7 +27,7 @@ function showResults(results){
   var html = "";
   console.log(results);
   $.each(results, function(index,value){
-    $('.search-results').append('<li>' + value.snippet.title + '<img class="thumbnail" src=" ' + value.snippet.thumbnails.medium.url + '">' + '<a href="https://youtube.com/watch?v=' + value.id.videoID + '">' +'</a></li>');
+    $('.search-results').append('<li>' + value.snippet.title + '<img class="thumbnail" src=" ' + value.snippet.thumbnails.medium.url + '">' + '<a href class="videoLink" ="https://youtube.com/watch?v=' + value.id.videoID + '">' + '</a>' + value.snippet.description + '</li>');
     console.log(value.snippet.title);
     console.log(value.snippet.thumbnails.medium.url);
   });
