@@ -1,32 +1,76 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	background-color: #092f09;
+}
+h1 {
+	text-align: center;
+	color: #02bda3;
+	margin-top: 10%;
+}
 #search-term {
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 3%;
 }
 #query {
 	background-color: beige;
 	size: 1.5rem;
-	font-size: 3vw 3vh;
 	width: 20rem;
 	height: 2rem;
 	margin: auto;
 	border-radius: 5px;
+	text-align: left;
+	padding: 10px;
 }
 
 #submit-button {
 	background-color: #02bda3;
-	font-size: 3vw 3vh;
 	color: #eae4df;
 	border-radius: 5px;
+	padding: 8px;
+	height: 3rem;
 }
 
 .search-results {
-	display: inline-block;
-	float: left;
 	list-style-type: none;
 	background: beige;
 	border-top: 3px solid #F5F5DC;
-	width: 100%;
 	text-align: center;
 	margin-top: 6%;
+	font-size: 0;
 }
+
+.results {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 25%;
+	display: inline-table;
+}
+
+.results img {
+	width: 100%;
+	border:6px solid #02bda3;
+	border-radius: 5px;
+	margin-top: 4%;
+}
+.results .channelTitle {
+	font-weight: 600;
+	font-size: 16px;
+	margin-top: 6%;
+	color: #02bda3;
+	height: 20px;
+}
+
+.results .description {
+    font-size: 12px;
+    height: 10px;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+
+
+
+
 

@@ -18,15 +18,13 @@ function getRequest(searchTerm){
 
   $.getJSON(url, params, function(data){
     showResults(data.items);
-    console.log(data.items);
   });
 }
 
 
 function showResults(results){
   $.each(results, function(index,value){
-    $('.search-results').append('<li class="results">' + value.snippet.title + '<br/>' + '<a href="https://www.youtube.com/watch?v=' + value.id.videoID + '"><img class="thumbnail" src="' +value.snippet.thumbnails.medium.url+ '"></a>' + '<br/>' + value.snippet.description + '</li>');
-    console.log(value.snippet.title);
+     $('.search-results').append('<li class="results">' + '<p class="channelTitle">' + value.snippet.channelTitle + '</p>' + '<a href="https://www.youtube.com/watch?v=' + value.id.videoId + '"><img class="thumbnail" src="' +value.snippet.thumbnails.medium.url+ '"></a>' + '<p class="description">' + value.snippet.description + '</p>' + '</li>');    
   });
 }
 
