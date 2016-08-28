@@ -103,5 +103,9 @@ h1 {
 	#query {
 		margin-top: 8%;
 	}
+	#submit-button {
+		width: 6rem;
+		margin-top: 6%;
+	}
 }
 
