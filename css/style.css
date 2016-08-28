@@ -1,3 +1,4 @@
+
 * {
 	margin:0;
 	padding:0;
@@ -9,6 +10,7 @@ h1 {
 	text-align: center;
 	color: #02bda3;
 	margin-top: 10%;
+	font-family: Fascinate Inline;
 }
 #search-term {
 	text-align: center;
@@ -69,7 +71,33 @@ h1 {
     margin-bottom: 8%;
 }
 
-
-
-
+@media only screen and (min-width: 717px) and (max-width: 980px) {
+.results {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 33%;
+	display: inline-table;
+	}
+}
+@media only screen and (min-width: 100px) and (max-width: 716px) {
+.results {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 50%;
+	display: inline-table;
+	}
+	.results .description {
+    font-size: 2vw;
+    height: 5px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+	}
+	h1 {
+		font-size: 6vw;
+	}
+	.results .channelTitle {
+		font-size: 3.25vw;
+		margin-bottom: 4%;
+	}
+}
 
