@@ -10,7 +10,7 @@ h1 {
 	text-align: center;
 	color: #02bda3;
 	margin-top: 10%;
-	font-family: Fascinate Inline;
+	font-family: 'Fascinate Inline';
 }
 #search-term {
 	text-align: center;
@@ -38,6 +38,7 @@ h1 {
 .search-results {
 	list-style-type: none;
 	background: beige;
+	background-image: url('http://i.imgur.com/fjLP11N.jpg');
 	text-align: center;
 	margin-top: 6%;
 	font-size: 0;
@@ -60,7 +61,7 @@ h1 {
 	font-weight: 600;
 	font-size: 16px;
 	margin-top: 6%;
-	color: #02bda3;
+	color: #047a4d;
 	height: 20px;
 }
 
@@ -79,25 +80,47 @@ h1 {
 	display: inline-table;
 	}
 }
-@media only screen and (min-width: 100px) and (max-width: 712px) {
+@media only screen and (min-width: 480px) and (max-width: 712px) {
+
 .results {
 	box-sizing: border-box;
 	padding: 30px;
-	width: 50%;
+	display: inline;
+	}
+.results .channelTitle {
+	font-size: 5vw;
+	margin-bottom: 1.5rem;
+}	
+.results img {
+	width: 100%;
+	border:2px solid #02bda3;
+	border-radius: 5px;
+	margin-top: 4%;
+	}
+	h1 {
+	font-size: 8vw;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+.results {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 100%;
+	margin: auto;
 	display: inline-table;
 	}
 	.results .description {
     font-size: 3.75vw;
     height: 5px;
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 25%;
 	}
 	h1 {
 		margin-top: 16%;
 		font-size: 12vw;
 	}
 	.results .channelTitle {
-		font-size: 4.75vw;
+		font-size: 5.75vw;
 		margin-bottom: 4%;
 	}
 	#query {
@@ -108,10 +131,9 @@ h1 {
 		margin-top: 6%;
 	}
 	.results img {
-	width: 10rem;
+	width: 100%;
 	border:3px solid #02bda3;
 	border-radius: 3px;
 	margin-top: 4%;
+	}	
 }
-}
-
